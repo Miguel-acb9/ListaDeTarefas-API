@@ -1,0 +1,10 @@
+{
+    "type": "sqlite",
+    "database": "./BancoDeDados/BancoDeDados.sqlite",
+    "entities": [ "./API/Modelos/Entidades/*.ts" ],
+    "migrations": [ "./BancoDeDados/Migracoes/*.ts" ],
+    "cli": {
+        "entitiesDir": "./API/Modelos/Entidades",
+        "migrationsDir": "./BancoDeDados/Migracoes"
+    }
+}
