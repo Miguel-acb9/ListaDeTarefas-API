@@ -1,7 +1,7 @@
 # API - Lista de Tarefas
 A aplicação é um software de gerenciamento de tarefas para auxiliar nas atividades do cotidiano, estudos e desenvolvimento de software. O projeto parte de um interesse pessoal para auxiliar a identificar e monitorar o trabalho que deve ser feito.
 
-
+___
 ## 🚀 Começando
 
 ### 📋 Pré-requisitos
@@ -17,7 +17,6 @@ A aplicação é um software de gerenciamento de tarefas para auxiliar nas ativi
     ```PowerShell
     npm install --global yarn
     ```
-    
 
 ### 📋 Dependências
 
@@ -26,6 +25,13 @@ A aplicação é um software de gerenciamento de tarefas para auxiliar nas ativi
     yarn 
     ```
 
+___
+## 💾 Bando de Dados
+Criar banco de dados
+```
+yarn typeorm migration:run
+```
 
+___
 ## ✒️ Autores
 - [**Miguel Alves Cordeiro Braz**](https://github.com/Miguel-acb9) - *Desenvolvedor*
