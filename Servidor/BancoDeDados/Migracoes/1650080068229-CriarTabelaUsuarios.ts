@@ -38,8 +38,7 @@ class CriarTabelaUsuarios1650080068229 implements MigrationInterface {
                     },
                     { 
                         name: "foto_perfil", 
-                        type: "varchar",
-                        isUnique: true
+                        type: "varchar"
                     },
                     { 
                         name: "administrador", 

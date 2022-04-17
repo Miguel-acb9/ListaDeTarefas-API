@@ -3,6 +3,6 @@ import { Etiqueta } from "../Entidades/Etiqueta";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Etiqueta)
-class RepositorioEtiqueta extends Repository<Etiqueta> { }
+class Etiqueta_Repositorio extends Repository<Etiqueta> { }
 
-export { RepositorioEtiqueta };
+export { Etiqueta_Repositorio };

@@ -3,6 +3,6 @@ import { Grupo } from "../Entidades/Grupo";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Grupo)
-class RepositorioGrupo extends Repository<Grupo> { }
+class Grupo_Repositorio extends Repository<Grupo> { }
 
-export { RepositorioGrupo };
+export { Grupo_Repositorio };

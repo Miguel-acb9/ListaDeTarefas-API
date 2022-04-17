@@ -3,6 +3,6 @@ import { Estado } from "../Entidades/Estado";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Estado)
-class RepositorioEstado extends Repository<Estado> { }
+class Estado_Repositorio extends Repository<Estado> { }
 
-export { RepositorioEstado };
+export { Estado_Repositorio };

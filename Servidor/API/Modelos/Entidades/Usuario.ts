@@ -23,7 +23,7 @@ class Usuario {
     foto_perfil: string;
 
     @Column()
-    readonly administrador: string;
+    readonly administrador: boolean;
 
     @CreateDateColumn()
     readonly criado_em: Date;

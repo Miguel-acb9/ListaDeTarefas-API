@@ -3,6 +3,6 @@ import { Projeto } from "../Entidades/Projeto";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Projeto)
-class RepositorioProjeto extends Repository<Projeto> { }
+class Projeto_Repositorio extends Repository<Projeto> { }
 
-export { RepositorioProjeto };
+export { Projeto_Repositorio };

@@ -3,6 +3,6 @@ import { Fluxo } from "../Entidades/Fluxo";
 import { Repository, EntityRepository } from "typeorm";
 
 @EntityRepository(Fluxo)
-class RepositorioFluxo extends Repository<Fluxo> { }
+class Fluxo_Repositorio extends Repository<Fluxo> { }
 
-export { RepositorioFluxo };
+export { Fluxo_Repositorio };
