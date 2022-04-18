@@ -4,8 +4,8 @@ import { Usuario_Repositorio } from "../Modelos/Repositorios/Usuario_Repositorio
 
 class ExcluirUsuario_Servico {
     async executar(id: string) {
-        const repositorioUsuario = await getCustomRepository(Usuario_Repositorio).delete(id);
-        if(repositorioUsuario.affected === 0) { throw new Error("Erro ao deletar usuário administrador."); }
+        const usuarioRepositorio = await getCustomRepository(Usuario_Repositorio).delete(id);
+        if(usuarioRepositorio.affected === 0) { throw new Error("Erro ao deletar usuário."); }
 
         return { Mensagem: "O usuário foi excluído." };
     }

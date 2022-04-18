@@ -20,11 +20,6 @@ class CriarTabelaEtiquetas1650081230061 implements MigrationInterface {
                         isNullable: false
                     },
                     {
-                        name: "id_criador",
-                        type: "uuid",
-                        isNullable: false
-                    },
-                    {
                         name: "criado_em",
                         type: "timestamp",
                         default: "now()"
@@ -33,16 +28,6 @@ class CriarTabelaEtiquetas1650081230061 implements MigrationInterface {
                         name: "atualizado_em",
                         type: "timestamp",
                         default: "now()"
-                    }
-                ],
-                foreignKeys: [
-                    {
-                        name: "FK_id_usuario",
-                        columnNames: ["id_criador"],
-                        referencedTableName: "usuarios",
-                        referencedColumnNames: ["id"],
-                        onDelete: "CASCADE",
-                        onUpdate: "CASCADE"
                     }
                 ]
             })

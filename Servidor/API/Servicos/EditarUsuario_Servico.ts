@@ -14,9 +14,15 @@ interface IUsuario {
 
 class EditarUsuario_Servico {
     async executar({ id, nome, ocupacao, email, senha, foto_perfil = "", administrador = false }: IUsuario) {
-        const repositorioUsuario = getCustomRepository(Usuario_Repositorio);
-        const usuario = repositorioUsuario.create({ id, nome, ocupacao, email, senha, foto_perfil, administrador });
-        const usuarioAlterado = await repositorioUsuario.save(usuario);
+        const usuarioRepositorio = getCustomRepository(Usuario_Repositorio);
+        
+        //Regras
+        if(!id) { throw new Error("O cadastro não foi atualizado! ID ausente."); }
+        if(!nome) { throw new Error("O cadastro não foi atualizado! Nome ausente."); }
+        if(!email) { throw new Error("O cadastro não foi atualizado! E-mail ausente."); }
+        if(!senha) { throw new Error("O cadastro não foi atualizado! Senha ausente."); }
+        const usuario = usuarioRepositorio.create({ id, nome, ocupacao, email, senha, foto_perfil, administrador });
+        const usuarioAlterado = await usuarioRepositorio.save(usuario);
 
         return usuarioAlterado;
     }
