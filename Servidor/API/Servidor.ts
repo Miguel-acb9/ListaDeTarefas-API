@@ -1,6 +1,7 @@
 // Importação de módulos e bibliotecas
 import "../BancoDeDados";
 import "reflect-metadata";
+import morgan from "morgan";
 import express from "express";
 import "express-async-errors";
 import { rotiador } from "./Rotas/Rotas";
@@ -9,6 +10,7 @@ import { TratadorDeErros } from "./Middleware/TratadorDeErros";
 const servidor = express();
 
 // Middleware
+servidor.use(morgan("dev"));
 servidor.use(express.json());
 servidor.use(rotiador);
 servidor.use(TratadorDeErros);
